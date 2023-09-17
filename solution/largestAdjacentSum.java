@@ -1,3 +1,5 @@
+package solution;
+
 public class largestAdjacentSum {
     static int f (int[] a){
         int max = 0;
