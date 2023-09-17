@@ -1,5 +1,3 @@
-package src;
-
 public class largestAdjacentSum {
     static int f (int[] a){
         int max = 0;
@@ -12,7 +10,6 @@ public class largestAdjacentSum {
     }
 
     public static void main(String[] args) {
-
         System.out.println(f(new int[] {1,2,3,4}));
         System.out.println(f(new int[] {18, -12, 9, -10} ));
         System.out.println(f(new int[] {1,1,1,1,1,1,1,1,1}));
