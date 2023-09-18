@@ -34,6 +34,6 @@ public class decodeArray {
         System.out.println(f(new int[]{-1,5,8,17,15}));
         System.out.println(f(new int[]{1,5,8,17,15}));
         System.out.println(f(new int[]{111,115,118,127,125}));
-
+        System.out.println(f(new int[]{1,1}));
     }
 }
