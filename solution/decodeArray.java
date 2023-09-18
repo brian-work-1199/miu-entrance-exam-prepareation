@@ -6,18 +6,26 @@ public class decodeArray {
         int sign;
         int abs = 0;
         int sum = 0;
-        for(int i = 1; i < a.length; i++){
-            int count = a.length - i;
-            if (a[i-1] < a[i]){
-                abs = -(a[i-1] - a[i]);
+//        for(int i = 1; i < a.length; i++){
+//            int count = a.length - i;
+//            if (a[i-1] < a[i]){
+//                abs = -(a[i-1] - a[i]);
+//            }else{
+//                abs = a[i-1] - a[i];
+//            }
+//            while(count > 1){
+//                abs *= 10;
+//                count--;
+//            }
+//            sum += abs;
+//        }
+        for(int i = 0; i < a.length-1; i++){
+            if(a[i] < a[i+1]){
+                abs = -(a[i] - a[i+1]);
             }else{
-                abs = a[i-1] - a[i];
+                abs = a[i] - a[i+1];
             }
-            while(count > 1){
-                abs *= 10;
-                count--;
-            }
-            sum += abs;
+            sum = sum*10 + abs;
         }
         return a[0] < 0 ? -sum: sum;
     }
