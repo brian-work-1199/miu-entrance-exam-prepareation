@@ -25,7 +25,7 @@ public class isSequencedArray {
         return 1;
     }
 
-    public static int f2(int[] a, int m, int n) {
+    static int f2(int[] a, int m, int n) {
         if (a.length < 1 || a[0] != m || a[a.length - 1] != n) {
             return 0;
         }
