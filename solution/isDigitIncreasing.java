@@ -10,8 +10,8 @@ public class isDigitIncreasing {
             n/=10;
             count++;
         }
-        //check 1 to n, which number satisfy n = a + aa + aaa +....
-        for(int i = 1; i <= check; i++){
+        //check 1 to 9, which number satisfy n = a + aa + aaa +....
+        for(int i = 1; i <= 9; i++){
             digit = count;
             sum = 0;
             result = 0;
