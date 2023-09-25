@@ -22,6 +22,7 @@ public class largestDifferenceOfEvens {
         }
         return -1;
     }
+
     static int f(int[] a) {
         int firstEvenNum = 0, max = -1;
 
