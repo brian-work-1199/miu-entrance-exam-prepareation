@@ -19,16 +19,6 @@ public class isComplete {
                 if(a[i] + a[j] == 8) isSumTo8 = true;
             }
         }
-        for (int i = 0; i < a.length; i++) {
-            if(a[i] % 2 == 0) {
-                isEven = true;
-            }else if(isSquare(a[i])){
-                isSquare = true;
-            }
-            for(int j = i + 1; j < a.length; j++){
-                if(a[i] + a[j] == 8) isSumTo8 = true;
-            }
-        }
         return (isEven && isSquare && isSumTo8) ? 1:0;
     }
     public static void main(String[] args) {
