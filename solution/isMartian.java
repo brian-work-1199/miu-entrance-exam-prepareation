@@ -4,13 +4,10 @@ public class isMartian {
 
     static int f(int[] a){
         int count1 = 0, count2 = 0;
-        for(int i = 0; i < a.length - 1; i++){
-            if(a[i] == a[i+1]) return 0;
-        }
-
-        for(int j = 0; j < a.length; j++){
-            if(a[j] == 1) count1++;
-            if(a[j] == 2) count2++;
+        for(int i = 0; i < a.length; i++){
+            if(i < a.length - 1 && a[i] == a[i+1]) return 0;
+            if(a[i] == 1) count1++;
+            if(a[i] == 2) count2++;
         }
         return count1 > count2 ? 1:0;
     }
