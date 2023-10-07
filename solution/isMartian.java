@@ -7,6 +7,7 @@ public class isMartian {
         for(int i = 0; i < a.length - 1; i++){
             if(a[i] == a[i+1]) return 0;
         }
+
         for(int j = 0; j < a.length; j++){
             if(a[j] == 1) count1++;
             if(a[j] == 2) count2++;
