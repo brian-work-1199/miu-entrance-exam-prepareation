@@ -1,4 +1,4 @@
-package solution;
+package Practices;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,23 +6,24 @@ import java.util.Arrays;
 public class encodeNumber {
 
     static int[] f(int n){
-        ArrayList<Integer> primeFactors = new ArrayList<>();
-        int k = 0;
-        if (n <= 1) return null;
+        ArrayList<Integer> primeFactor = new ArrayList<>();
+        if(n <= 1) return null;
         for(int i = 2; i < n; i++){
             while(n%i==0){
-                primeFactors.add(i);
+                primeFactor.add(i);
                 n /= i;
             }
         }
-        if (n > 1) primeFactors.add(n);
-        int [] returnArray = new int[primeFactors.size()];
-        for (int j = 0; j < primeFactors.size(); j++){
-            returnArray[j] = primeFactors.get(j);
+        if(n > 1) primeFactor.add(n);
+        int [] resultArray = new int[primeFactor.size()];
+        for(int j = 0; j < primeFactor.size(); j++){
+            resultArray[j] = primeFactor.get(j);
         }
-        return returnArray;
+        return resultArray;
     }
-    public static void main (String[] args){
+
+    public static void main(String[] args) {
+
         System.out.println(Arrays.toString(f(6936)));
         System.out.println(Arrays.toString(f(2)));
         System.out.println(Arrays.toString(f(6)));

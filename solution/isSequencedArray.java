@@ -40,6 +40,6 @@ public class isSequencedArray {
 
     public static void main(String[] args) {
         System.out.println(f(new int[]{-5, -5, -4, -4, -4, -3, -3, -2, -2, -2}, -5, -2));
-        System.out.println(f2(new int[]{-5, -5, -4, -4, -4, -3, -3, -2, -2, -2}, -5, -2));
+        System.out.println(f2(new int[]{-5, -5, -3, -4, -4, -4, -3, -3, -2, -2, -2}, -5, -2));
     }
 }
