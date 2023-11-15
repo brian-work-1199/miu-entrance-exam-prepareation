@@ -6,7 +6,6 @@ public class isSystematicallyIncreasing {
 
         int i = 0;
         int num = 1;
-
         while(i < a.length){
             for(int j = 0; j < num; j++){
                 if(a[i] != j+1) return 0;

@@ -12,17 +12,15 @@ public class areAnagrams {
             copya1[i] = a1[i];
             copya2[i] = a2[i];
         }
-
-        for(int j = 0; j < a1.length; j++){
-            for(int k = 0; k < a2.length; k++){
+        for(int j = 0; j < copya1.length; j++){
+            for(int k = 0; k < copya2.length; k++){
                 if(copya1[j] == copya2[k]){
                     copya1[j] = ' ';
                     copya2[k] = ' ';
                 }
             }
         }
-
-        for(int t = 0; t < a1.length; t++){
+        for(int t = 0; t < copya1.length; t++){
             if(copya1[t] != ' ' || copya2[t] != ' ') return 0;
         }
         return 1;

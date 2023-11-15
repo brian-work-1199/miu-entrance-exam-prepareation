@@ -7,13 +7,13 @@ public class largestDifferenceOfEven {
         int max = -1;
 
         if(a.length < 2) return -1;
-        for(int i = 0; i < a.length; i++){
+        for(int i = 0; i<a.length; i++){
             if(a[i] % 2 == 0){
                 firstEven = a[i];
                 for(int j = i+1; j < a.length; j++){
                     if(a[j] % 2 == 0){
-                        differenceEven = a[j] - firstEven > 0 ? a[j] - firstEven : firstEven - a[j];
-                        max = differenceEven > max ? differenceEven : max;
+                        differenceEven = firstEven > a[j] ? firstEven - a[j] : a[j] - firstEven;
+                        max = differenceEven > max ? differenceEven:max;
                     }
                 }
             }

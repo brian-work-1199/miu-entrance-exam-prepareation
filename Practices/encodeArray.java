@@ -13,12 +13,12 @@ public class encodeArray {
         }else if(n == 0){
             array.add(1);
         }
-        while(n!=0){
-            array.add(0,1);
-            for(int i = 0; i < n%10; i++){
-                array.add(0,0);
+        while(n!=0) {
+            array.add(0, 1);
+            for (int i = 0; i < n % 10; i++) {
+                array.add(0, 0);
             }
-            n/=10;
+            n /= 10;
         }
         if(sign == -1) array.add(0, -1);
         int [] resultArray = new int[array.size()];

@@ -4,17 +4,15 @@ public class isPrimeHappy {
 
     static int f(int n){
         int sum = 0;
-        for(int j = 2; j < n; j++){
+        for(int i = 2; i < n; i++){
             boolean isPrime = true;
-            for(int i = 2; i < j; i++){
-                if(j%i==0){
+            for(int j = 2; j < i;j++){
+                if(i%j==0){
                     isPrime = false;
                     break;
                 }
             }
-            if(isPrime){
-                sum+=j;
-            }
+            if(isPrime) sum += i;
         }
 
         return (sum%n == 0 && n > 2) ? 1 : 0;

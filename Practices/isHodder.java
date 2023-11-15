@@ -6,7 +6,7 @@ public class isHodder {
             if(n%i==0) return 0;
         }
         for(int j = 0; j < n; j++){
-            if(power(2,j) - 1 == n) return 1;
+            if(power(2, j) - 1 == n) return 1;
         }
         return 0;
     }
@@ -18,8 +18,8 @@ public class isHodder {
 //            exponent--;
 //        }
 //        return result;
-        if(exponent == 0) return 1;
-        return base*power(base,exponent-1);
+       if(exponent == 0) return 1;
+       return base*power(base, exponent - 1);
     }
 
     public static void main(String[] args) {

@@ -2,15 +2,16 @@ package Practices;
 
 public class closestFibonacci {
     static int f(int n){
-        int fibonacci = 0;
-        int f1 = 1;
-        int f2 = 1;
-        while(fibonacci <= n){
-            fibonacci = f1 + f2;
-            f1 = f2;
-            f2 = fibonacci;
-        }
-        return f1;
+       int fibo1 = 1;
+       int fibo2= 1;
+       int fibonacci = 0;
+       if(n < 1) return 0;
+       while(fibonacci <= n){
+           fibonacci = fibo1 + fibo2;
+           fibo1 = fibo2;
+           fibo2 = fibonacci;
+       }
+        return fibo1;
     }
 
     public static void main(String[] args) {
