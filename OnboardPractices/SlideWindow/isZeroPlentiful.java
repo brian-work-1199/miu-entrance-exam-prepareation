@@ -1,26 +1,24 @@
-package Practices;
+package OnboardPractices.SlideWindow;
 
 public class isZeroPlentiful {
-
     static int f(int[] a){
-        int count = 0;
-        int countSequence = 0;
+        int match = 0;
+        int countSequences = 0;
         if(a.length == 0) return 0;
         for(int i = 0; i < a.length; i++){
             if(a[i] == 0){
-                count++;
-            } else if (count == 0) {
+                match++;
+            }else if (match == 0){
                 continue;
-            } else {
-                if(count >= 4){
-                    countSequence++;
+            }else{
+                if(match >= 4){
+                    countSequences++;
                 }
-                count = 0;
+                match = 0;
             }
         }
-        return (a[a.length - 1] == 0 && count >= 4) ? countSequence+1 : countSequence;
+        return (a[a.length-1] == 0 && match >= 4) ? countSequences+1:countSequences;
     }
-
     public static void main(String[] args) {
         System.out.println(f(new int[]{1,0,0,0,0,0}));
         System.out.println(f(new int[]{1,2,0,0,0,0,0,2,-18,0,0,0,0,0,12}));
