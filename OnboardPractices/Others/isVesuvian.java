@@ -1,4 +1,4 @@
-package OnboardPractices;
+package OnboardPractices.Others;
 
 public class isVesuvian {
 

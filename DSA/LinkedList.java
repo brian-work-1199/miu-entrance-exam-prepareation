@@ -130,4 +130,6 @@ public class LinkedList <E>{
         this.length -= 1;
         return temp;
     }
+
+
 }
