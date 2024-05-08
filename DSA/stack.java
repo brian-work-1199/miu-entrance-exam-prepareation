@@ -14,11 +14,11 @@ public class stack {
     // pop() - remove object from the top
     //
     public static void main(String[] args) {
-//        Stack<String> stack = new Stack<String>();
-//
-//        System.out.println(stack.empty());
-//
-//        stack.push("Minecraft");
+        Stack<String> stack = new Stack<String>();
+
+        System.out.println(stack.empty());
+
+        stack.push("Minecraft");
 //        stack.push("Skyrim");
 //        stack.push("Doom");
 //        stack.push("Borderland");
@@ -30,24 +30,24 @@ public class stack {
 //        System.out.println(stack.search("Skyrim"));
 //
 //        stack.pop();
-//
-//        System.out.println(stack.size());
+
+        System.out.println(stack.size());
 //        System.out.println(stack.search("FFVIIS"));
 
 //        Queue<String> queue = new LinkedList<String>();
-        LinkedList<String> linkedList = new LinkedList<>();
-
-        linkedList.push("A");
-        linkedList.push("B");
-        linkedList.push("C");
-        linkedList.pop();
+//        LinkedList<String> linkedList = new LinkedList<>();
+//
+//        linkedList.push("A");
+//        linkedList.push("B");
+//        linkedList.push("C");
+//        linkedList.pop();
 
 //        linkedList.offer("A");
 //        linkedList.offer("B");
 //        linkedList.offer("C");
 //        linkedList.poll();
-        ArrayList<Integer> arrray = new ArrayList<>();
-        int[] aray = new int[3];
+//        ArrayList<Integer> arrray = new ArrayList<>();
+//        int[] aray = new int[3];
 
     }
 }

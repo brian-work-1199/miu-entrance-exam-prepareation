@@ -82,6 +82,10 @@ public class DynamicArray {
         return size == 0;
     }
 
+    public boolean isFull(){
+        return size == array.length;
+    }
+
     public String toString(){
         String string = "";
         for(int i = 0; i < capacity; i++){
