@@ -17,7 +17,14 @@ public class RecurQuestion {
 	 */
 	public static List[] move(List<String> list1, List<String> list2) {
 		//implement
-		return null;
+		// Base case: If list2 has the same size as list1 or just one bigger
+		if (list2.size() == list1.size() || list2.size() == list1.size() + 1) {
+			return new List[]{list1, list2};
+		}
+		// Recursive case: Move an element from list1 to list2
+		list2.add(list1.remove(0));
+		// Recur with updated lists
+		return move(list1, list2);
 	}
 	
 	public static void printArray(List[] lists) {

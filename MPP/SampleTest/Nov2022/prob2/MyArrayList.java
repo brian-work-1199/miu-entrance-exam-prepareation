@@ -32,6 +32,13 @@ public class MyArrayList {
 		arr[--size] = null; // Decrement size and set the last element to null
 		return removed;
 	}
+
+	private void resize() {
+		int newSize = arr.length * 2; // Double the size of the array
+		String[] newArr = new String[newSize];
+		System.arraycopy(arr, 0, newArr, 0, arr.length); // Copy elements to the new array
+		arr = newArr; // Update reference to the new array
+	}
 	
 	//Returns a string representation of this list
 	//
