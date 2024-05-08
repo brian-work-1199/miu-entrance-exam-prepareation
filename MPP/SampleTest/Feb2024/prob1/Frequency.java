@@ -7,7 +7,21 @@ public class Frequency {
 	 */
 	public HashMap<Integer, Integer> recurFreqTable(LinkedList<Integer> list) {
 		//implement
-		return null;
+		HashMap<Integer, Integer> frequencyTable = new HashMap<>();
+		if (list.isEmpty()) {
+			return frequencyTable; // Return an empty frequency table if the list is empty
+		} else {
+			// Process the first element in the list
+			int firstElement = list.removeFirst();
+			System.out.println("first element: " + firstElement);
+			// Recursively process the rest of the list
+			frequencyTable = recurFreqTable(list);
+			System.out.println("frequency table: " + frequencyTable);
+			// Update the frequency table
+			System.out.println("update frequency table: " +frequencyTable.put(firstElement, frequencyTable.getOrDefault(firstElement, 0) + 1));
+
+		}
+		return frequencyTable;
 	}
 	
 	//expected output:
