@@ -1,4 +1,4 @@
-package MPP;
+package MPP.DSA;
 
 public class StackArray {
 	int size;
